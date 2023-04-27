@@ -143,11 +143,67 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "O melhor vendedor foi Julia com  27000 vendas\n"
+     ]
+    }
+   ],
+   "source": [
+    "#seu código aqui\n",
+    "melhor_vendedor = ''\n",
+    "maior_vendas = 0\n",
+    "for venda in vendas:\n",
+    "    #venda[0] -> nome\n",
+    "    #venda[1] -> qtde\n",
+    "    if venda[1] > maior_vendas:\n",
+    "        maior_vendas = venda[1]\n",
+    "        melhor_vendedor = venda[0]\n",
+    "print('O melhor vendedor foi {} com  {} vendas'. format(melhor_vendedor , maior_vendas))\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Formas de interromper um \"FOR\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2 Opções"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "-> break \"interrompe e finaliza o for <br>\n",
+    "-> continue \"interrompe e vai para o proximo item do for\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
-    "#seu código aqui"
+    "vendas = [100, 150, 1500, 2000, 120]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Caso 1: se todas as vendas forem acima da media, a loja ganha bônus."
    ]
   },
   {
@@ -158,18 +214,19 @@
    "source": []
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
+   "cell_type": "markdown",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "source": [
+    "Caso 2: Exiba quem bateu a meta."
+   ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
+   "cell_type": "raw",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "source": [
+    "vendedores = ['Joao', 'Julia', 'Ana', 'Jose', 'Maria']\n",
+    "meta =130"
+   ]
   },
   {
    "cell_type": "code",
