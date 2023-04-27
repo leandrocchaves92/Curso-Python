@@ -192,7 +192,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -208,10 +208,53 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 13,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A loja não ganha binus\n",
+      "100\n",
+      "150\n",
+      "1500\n",
+      "2000\n",
+      "120\n"
+     ]
+    }
+   ],
+   "source": [
+    "meta = 110\n",
+    "\n",
+    "for venda in vendas:\n",
+    "    if venda < meta:\n",
+    "        print('A loja não ganha bonus')\n",
+    "    print (venda)   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A loja não ganha binus\n"
+     ]
+    }
+   ],
+   "source": [
+    "meta = 110\n",
+    "\n",
+    "for venda in vendas:\n",
+    "    if venda < meta:\n",
+    "        print('A loja não ganha bonus')\n",
+    "        break\n",
+    "    print (venda) "
+   ]
   },
   {
    "cell_type": "markdown",
@@ -221,12 +264,61 @@
    ]
   },
   {
-   "cell_type": "raw",
+   "cell_type": "code",
+   "execution_count": 15,
    "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "100\n",
+      "150\n",
+      "1500\n",
+      "2000\n",
+      "120\n"
+     ]
+    }
+   ],
    "source": [
     "vendedores = ['Joao', 'Julia', 'Ana', 'Jose', 'Maria']\n",
-    "meta =130"
+    "meta =130\n",
+    "\n",
+    "for venda in vendas:\n",
+    "    print(venda)"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "150\n",
+      "1500\n",
+      "2000\n"
+     ]
+    }
+   ],
+   "source": [
+    "vendedores = ['Joao', 'Julia', 'Ana', 'Jose', 'Maria']\n",
+    "meta =130\n",
+    "\n",
+    "for venda in vendas:\n",
+    "    if venda < meta:\n",
+    "        continue\n",
+    "    print(venda)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
